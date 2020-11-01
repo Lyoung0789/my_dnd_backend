@@ -35,7 +35,7 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :allies_and_organization
       t.string :character_backstory
 
-      t.integer :user
+      t.integer :user_id
       t.timestamps
     end
   end
