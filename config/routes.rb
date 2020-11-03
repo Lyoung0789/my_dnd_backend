@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "static#home"
   resource :registrations, only: [:create]
   resource :sessions, only: [:create]
-  delete :logout, to "sessions#logout"
-  get :loggedin, to "sessions#logged_in"
-  
+  delete :logout, to: "sessions#logout"
+  get :loggedin, to: "sessions#logged_in"
+
 end
